@@ -1,2 +1,83 @@
 @charset 'UTF-8';
+/* Variaveis de cores */
+:root {
+    --color-primary: #3B82F6;
+    --color-primary-dark: #2563EB;
+    --color-bg: #F9FAFB;
+    --color-text: #1F2937;
+    --color-nav-bg: #38B2AC;
+    --color-border: #D1D5DB;
+    --color-main-bg: #cccfd35c;
+}
+/* Reset do CSS */
+* {
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+/* Estilo do headder */
+.header {
+    background-color: var(--color-nav-bg);
+}
+.container-header {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-list a {
+    color: var(--color-text);
+    margin: 0px 10px;
+    padding: 0.5rem;
+}
+.menu-list a:hover {
+    color: var(--color-bg);
+    transition: all 250ms ease-in-out;
+    text-decoration: underline;
+    text-decoration-color: var(--color-bg);
+}
+/* Estilo do main */
+.main-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-main-bg);
+    border: 2px solid var(--color-border);
+    width: 100%;
+    height: 100vh;
+}
 
+/* Estilo do footer */
+.footer {
+    background-color: var(--color-nav-bg);
+    color: var(--color-text);
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.footer a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.footer a:hover {
+    color: var(--color-bg);
+    transition: all 250ms ease-in-out;
+    text-decoration: underline;
+    text-decoration-color: var(--color-bg);
+}

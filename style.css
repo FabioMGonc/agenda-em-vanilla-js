@@ -8,6 +8,7 @@
     --color-nav-bg: #38B2AC;
     --color-border: #D1D5DB;
     --color-main-bg: #cccfd35c;
+    --color-main-bg2:#cccfd3;
 }
 /* Reset do CSS */
 * {
@@ -18,7 +19,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: var(--color-bg);
+    background-color: var(--color-main-bg2);
     color: var(--color-text);
 }
 /* Estilo do headder */
@@ -26,20 +27,35 @@ body {
     background-color: var(--color-nav-bg);
 }
 .container-header {
-    display: flex;
-    padding: 1rem;
     align-items: center;
     justify-content: space-between;
+}
+.container-header h1{
+    display: block;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
 }
 .menu-list {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
+}
+.tabs {
+    padding:15px;
+    margin-right: 1px;
+    border-radius: 15px 15px 0px 0px;
+    background-color: var(--color-primary-dark);
+    cursor: pointer;
+}
+.tabsSelected {
+    background-color: var(--color-main-bg2) !important;
+    color: var(--color-text) !important;
 }
 .menu-list a {
-    color: var(--color-text);
-    margin: 0px 10px;
-    padding: 0.5rem;
+    color: var(--color-bg);
+    margin-right: 1px;
+    padding: 0.7rem;
 }
 .menu-list a:hover {
     color: var(--color-bg);
@@ -52,10 +68,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-main-bg);
+    background-color: var(--color-main-bg2);
     border: 2px solid var(--color-border);
     width: 100%;
     height: 100vh;
+}
+.body-contains {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
 }
 
 /* Estilo do footer */
